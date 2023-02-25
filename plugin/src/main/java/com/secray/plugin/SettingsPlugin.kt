@@ -4,7 +4,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.initialization.Settings
 import org.gradle.api.initialization.resolve.RepositoriesMode
 
-class SettingsPlugin() : Plugin<Settings> {
+class SettingsPlugin : Plugin<Settings> {
     override fun apply(target: Settings) {
         println("start settings")
         println(target.providers.gradleProperty("kotlin.code.style").get())

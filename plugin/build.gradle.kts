@@ -1,8 +1,5 @@
 plugins {
-    `java-gradle-plugin`
     `kotlin-dsl`
-    id("java-library")
-    id("org.jetbrains.kotlin.jvm") version "1.8.0"
 }
 
 gradlePlugin {
@@ -15,6 +12,6 @@ gradlePlugin {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
